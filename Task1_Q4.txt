@@ -1,0 +1,25 @@
+Example of Print command in Python 2 vs Python 3
+
+
+Namitas-Air:Python_Task nami$ python
+Python 2.7.10 (default, Feb 22 2019, 21:55:15) 
+[GCC 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.37.14)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+
+>>> x = "try print command with python2"
+>>> print x
+try print command with python2
+>>> 
+[23]+  Stopped                 python
+
+
+
+Namitas-Air:Python_Task nami$ python3.8
+Python 3.8.3 (v3.8.3:6f8c8320e9, May 13 2020, 16:29:34) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+
+>>> x = "try print command with python3"
+>>> print(x)
+try print command with python3
+>>> 
