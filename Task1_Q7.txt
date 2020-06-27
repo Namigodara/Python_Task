@@ -1,0 +1,8 @@
+Q1 : If one data type value is assigned to ‘a’ variable and then a 
+different data type value is assigned to ‘a’ again. Will it change 
+the value. If Yes then Why?
+
+Ans:  Yes, In Python data type of variable need not to be specified. 
+According to Value assigned to the variable, python determines the data 
+type and alocate the memory. So as soon as we re- assign the different 
+data type value given, variable will store the new value.
