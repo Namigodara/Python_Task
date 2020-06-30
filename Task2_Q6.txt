@@ -1,0 +1,24 @@
+ Example 1:
+ x=123 
+for i in x:
+   	print(i)
+
+Output : TypeError: 'int' object is not iterable
+
+Example 2:
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+    if i == 3:
+        break
+else:
+    print("error")
+
+Output :
+0
+1
+2
+
+
+
