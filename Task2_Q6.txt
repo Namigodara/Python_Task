@@ -20,5 +20,14 @@ Output :
 1
 2
 
+Example 3 :
+count = 0
+while True:
+    print(count)
+    count += 1
+    if count >= 5:
+        Break
 
+Output :
+NameError: name 'Break' is not defined
 
