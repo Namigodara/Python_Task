@@ -63,3 +63,46 @@ numbers = [1,2,3,4,5,6,]
 print ("Given list is :", numbers)
 print ("Sum of the elements :", list_sum(numbers))
 print ("product of element :", list_prod(numbers))
+
+
+
+# Question 4:
+# Find a Largest and Smallest number in a List
+
+print ("Code for Task3 Q4 starts here:")
+
+x = [20,10,5,30,8,9,2,14]
+print ("List is :", x)
+
+
+for i in range(len(x)):
+    if (i == 0):
+        largest = x[i]
+        smallest = x[i]
+        continue
+    
+    if (largest < x[i]):
+        largest = x[i]
+    
+    if (smallest > x[i]):
+        smallest = x[i]
+
+print ("largest number in list :", largest)
+print ("Smallest number in list :", smallest)
+
+
+
+# Question 5:
+# Create a new list after removing even numbers from a list
+
+print ("Code for Task_3 Q5 starts here:")
+
+List_A = [2,4,5,7,8,9,11,18,15,21]
+print ("List_A is :", List_A)
+List_B = []
+
+for i in range(len(List_A)):
+    if (List_A[i]%2 != 0):
+        List_B.append(List_A[i])
+
+print("List_B :", List_B)
