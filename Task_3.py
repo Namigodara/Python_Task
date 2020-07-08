@@ -35,3 +35,31 @@ print ("slicing with negative indexing")
 print (A[-3:])
 print (A[:-2])
 print (A[-3:-1])
+
+
+
+# Question 3:
+# Write program to find sum of element of a List
+# Write a program to find multiplication of a given list.
+
+print ("Code for Task_3 Q3 starts here :")
+
+# Function for calculating sum of list element
+def list_sum(x):
+    sum = 0
+    for i in range(len(x)):
+        sum = sum + x[i]
+    return sum
+
+# function for calculating the product of a list
+def list_prod(x):
+    mult = 1
+    for i in range(len(x)):
+        mult = mult * x[i]
+    return mult
+    
+# Main program
+numbers = [1,2,3,4,5,6,]
+print ("Given list is :", numbers)
+print ("Sum of the elements :", list_sum(numbers))
+print ("product of element :", list_prod(numbers))
