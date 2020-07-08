@@ -106,3 +106,48 @@ for i in range(len(List_A)):
         List_B.append(List_A[i])
 
 print("List_B :", List_B)
+
+
+
+#Question 6:
+# Create a list of first five and last five values.
+# Values are square of numbers in range 1 to 30 both included.
+
+print ("Code for Task3 Q6 starts here:")
+
+list_A = []
+for i in range(1,31):
+    list_A.append(i**2)
+
+list_B = []
+list_B.extend(list_A[:5])
+list_B.extend(list_A[-5:])
+print(list_B)
+
+
+
+# Question 7:
+# Write a program to replace the last element in list with another list.
+# Smaple Data [[1,3,5,7,9,10],[2,4,6,8]]
+# Expected output [1,3,5,7,9,2,4,6,8]
+
+print ("Code for Task3 Q7 starts here:")
+
+# Method 1 :
+list_A =  [1,3,5,7,9,10]
+list_B =  [2,4,6,8]
+list_A.pop()
+list_A.extend(list_B)
+print(list_A)
+
+
+
+# Question 8:
+# Create new dictionary by concatening two.
+
+print ("Code for Task3 Q8 starts here :")
+
+fruit1 = {1:"apple", 2:"banana"}
+fruit2 = {3:"orange", 4:"mango"}
+fruit3 = {**fruit1,**fruit2}
+print (fruit3)
