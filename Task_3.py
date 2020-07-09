@@ -151,3 +151,40 @@ fruit1 = {1:"apple", 2:"banana"}
 fruit2 = {3:"orange", 4:"mango"}
 fruit3 = {**fruit1,**fruit2}
 print (fruit3)
+
+
+
+# Question 9 :
+# Create a dictionary that contains a number (1 to n) such that
+# in form (x,x*x)
+# sample data (n =5)
+# expected output (1:1,2:4,3:9,4:16,5:25)
+
+print ("code for Task3 Q9 starts here:")
+
+square = {}
+
+for i in range(1,10):
+    square[i] = i*i
+
+print(square)
+
+
+
+# Question 10:
+# Program accepts a sequence of number separated by comma from consol
+# Genrate a list and tupple with all these numbers
+# sample input = 34,67,88,99,17
+# output list = ["34","67","88","99","17"]
+# output tupple = ("34","67","88","99","17")
+
+print ("Code for Task3 Q10 starts here :")
+
+print ("enter number separated by comma : ")
+a = input()
+b = a.split(",")
+a_list = list(b)
+a_tuple = tuple(b)
+print("List from input : ", a_list)
+print("Tuple from input : ", a_tuple)
+
