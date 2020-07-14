@@ -58,3 +58,51 @@ def unique(list_in):
 
 B = unique(A)
 print ("output list with unique values :", B)
+
+
+
+# Question 4:
+# Write a program that accepts - (hyphen) separated seq of word as input
+# and print the ouput in hyphen seperated seq after sorting it out.
+
+print ("Code for Task4 Q4 starts here:")
+
+print("Enter a hyphen separated seq")
+str_in = input()
+
+def sort (x_str):
+    x_list = x_str.rsplit("-")
+    sort_list = sorted(x_list)
+    str_out = "-".join(sort_list)
+    return str_out
+
+res = sort(str_in)
+print("sorted output :", res)
+
+
+
+
+# Question 5:
+# Write a program that accepts sequence of lines as input
+# print the line after making all character capitalization. 
+# Sample input :
+''' Hello World
+    Practice makes it perfect'''
+# Expected Output:
+''' HELLO WORLD
+    PRACTICE MAKES IT PERFECT'''
+
+print("Code for task4 Q5 starts here:")
+
+print ("Enter the count of line you want to enter: ")
+count = int(input())
+
+l =[]
+print ("Enter the input lines one by one:")
+for i in range(count):   
+    str_in = input()
+    x = str_in.upper()
+    l.append(x)
+    
+print ("Output seq is: ")
+print (*l, sep = "\n")
