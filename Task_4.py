@@ -173,3 +173,116 @@ def square(n):
 
 x_out = square(20)
 print(x_out)
+
+
+
+# Question 9:
+# Write a function called showNumbers that take limit as parameter
+# It should print all the numbers between 0 and limit
+# it should label printed number with even and odd
+# ex if limit is 3
+# output:
+''' 0 EVEN
+    1 ODD
+    2 EVEN
+    3 ODD'''
+
+print ("Code for Task4 Q9 starts here:")
+
+def showNumbers(limit):
+    for i in range(limit):
+        if (i%2==0):
+            print (i,"EVEN")
+        else:
+            print (i,"ODD")
+
+showNumbers(4)
+
+
+
+# Question 10:
+# Write a program which can filter() {A built in pyhthon function}
+# to make a list of even numbers between 1 to 20 (Both included)
+
+
+print ("Code for task4 Q10 starts here:")
+
+number = list(range(1,21))
+
+def even(x):
+    if (x%2==0):
+        return True
+    else:
+        return False
+    
+res = filter (even,number)
+l = []
+for i in res:
+    l.append(i)
+print (l)
+
+
+
+# Question 11:
+# Write a program which can map() and filter() to make a list
+# Whose elements are square of even number in [1,2,3,4,5,6,7,8,9,10]
+
+print("code for task4 Q11 starts here:")
+x = [1,2,3,4,5,6,7,8,9,10]
+
+def even (n1):
+    if (n1%2==0):
+        return True
+    else:
+        return False
+
+def square (n2):
+    return n2**2
+
+res1 = filter (even, x)
+res2 = map (square,res1)
+print (list(res2))
+
+
+
+# Question 13:
+# flattern the list using reduce()
+# input : [[1,2,3].,[4,5],[6,7,8]] into [1,2,3,4,5,6,7,8]
+# goal [1,2,3,4,5,6,7,8] turn to 1234567 
+
+print("Code for Task4 Q13 starts here:")
+import functools
+
+list_in = [[1,2,3],[4,5],[6,7,8]]
+list_out = functools.reduce(lambda x,y:x+y,list_in)
+print (list_out)
+
+str1 = ""
+for i in list_out:
+    str1 += str(i)
+print(str1)
+
+
+
+# Question 14:
+# Write the output of given blocks
+
+'''def foo():
+    try:
+        return 1
+    finally:
+        return 2
+k = foo()
+print(k)'''
+
+# Output 1: 2
+
+'''def a():
+    try:
+        f(x, 4)
+    finally:
+        print('after f')
+    print('after f?')
+a()'''
+
+# Output : NameError: name 'f' is not defined
