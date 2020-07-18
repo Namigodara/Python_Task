@@ -47,6 +47,25 @@ print("list for task 6 :", x[99:100])
 
 
 
+# Question 4:
+# print range(1,1000) and xrange(1,1000) and see difference
+''' Question was done using python 2
+    x = range(1,1000) returns a list
+    y = xrange(1,1000) returns a xrange object'''
+
+
+
+# Question 5:
+# How tuple is considered beneficial as compared to list
+''' tuples are imutable while lsits are mutable, so you
+    can change the content in the list. 
+    so tuples are safer to store information which need 
+    not to be altered.
+    tuples are faster than lists
+    Tuples are imutable so can be used as dictionary keys'''
+
+
+
 # Question 6:
 # Create a list in range 1,100
 # print the numbers which are divisable by 3 and multiple of 2.
