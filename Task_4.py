@@ -110,7 +110,7 @@ print (*l, sep = "\n")
 
 
 # Question 6:
-#  Write a function that can take two integral as string
+# Write a function that can take two integral as string
 # compute their sum and print in console
 
 print ("code for task4 Q6 starts here:")
@@ -242,6 +242,22 @@ def square (n2):
 res1 = filter (even, x)
 res2 = map (square,res1)
 print (list(res2))
+
+
+
+# Question 12:
+# Write function to compute 5/0
+# use try/except block to catch exception.
+
+print ("Code for Task4 Q12 starts here:")
+
+try:
+    n1 = int(input("Enter the first number : "))
+    n2 = int(input("Enter the second number : "))
+    div = n1/n2
+    print ("division :",div)
+except ZeroDivisionError:
+    print ("can not be divided by 0")
 
 
 
