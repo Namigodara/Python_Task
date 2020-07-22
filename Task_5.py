@@ -79,6 +79,40 @@ print(dict3)
 
 
 
+
+# Question 5:
+# Learn more about yield, next and generators:
+
+'''Python generators are a simple way of creating iterators.    
+Simply speaking, a generator is a function that returns an object (iterator) 
+which we can iterate over (one value at a time). 
+
+It is fairly simple to create a generator in Python. 
+It is as easy as defining a normal function, 
+but with a yield statement instead of a return statement.
+
+If a function contains at least one yield statement 
+(it may contain other yield or return statements), it becomes a generator function. 
+Both yield and return will return some value from a function.
+The difference is that while a return statement terminates a function entirely, 
+yield statement pauses the function saving all its states 
+and later continues from there on successive calls.'''
+
+''' Example :
+def sq(x):
+    for i in range(x):
+        yield i*i
+
+res = sq(5)'''''
+''' we can write for or while loop to print values.
+while True:
+    try:
+        print(next(res))
+    except StopIteration:
+        break'''
+
+
+
 # Question 6:
 # Write a program in python using generators to reverse the string
 # input string = "Counsultadd Training"
@@ -119,3 +153,28 @@ def sum():
     print(res)
 
 sum()
+
+
+
+# Question 8 :
+# Learn about What is FRONT END and its Technologies and Tools
+# Make sure to mention at least 5 top notch technologies of Frontend.
+# Also mentioned the name of companies using 
+# those 5 technologies individually
+
+''' Front End Technology :
+    front-end development is the art of creating sites and 
+    web applications that render on the client-side.
+    While there are many different types of technologies and stacks, 
+    most front-end web developers use HTML, CSS and JavaScript, 
+    the de facto building blocks of the web, and client-side frameworks 
+    such as Angular, React, Stencil and Vue.
+
+    1. react: Airbnb, Dropbox, BBC, Facebook
+    2. AngularJS : Netflix , upwork, IBM
+    3. Ionic : The National health service, GE transportation 
+    4. Bootstrap : twitter, spotify, Udemy 
+    5. Flutter : Google ads, Alibaba, Birch finance 
+    6. Vue.js : Github, Netguru, nelify
+    '''
+    
