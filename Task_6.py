@@ -10,6 +10,11 @@ print ("code for task6 Q1 starts here:")
 # except SyntaxError:
 #     print ("check program for syntax error")
 
+''' program raises a error even after using except block,
+    as syntax error in python can not be ignored.
+    exception are used where program is syntacally is
+    correct but logically might not make sense'''
+
 
 
 # Question 2 :
@@ -79,6 +84,41 @@ while True:
         else:
             print ("maximum number of attempt reached")
             break
+
+
+
+
+
+# Question 5:
+# Undertsand the cocept of raise and finally in python
+''' Raise exceotion:
+    In Python programming, exceptions are raised when errors occur at runtime. 
+    We can also manually raise exceptions using the raise keyword.
+    We can optionally pass values to the exception to clarify 
+    why that exception was raised.'''
+
+''' Example for raise exception 
+try:
+...     a = int(input("Enter a positive integer: "))
+...     if a <= 0:
+...         raise ValueError("That is not a positive number!")
+... except ValueError as ve:
+...     print(ve)'''
+
+''' finally block :
+    The try statement in Python can have an optional finally clause. 
+    This clause is executed no matter what, 
+    and is generally used to release external resources.
+    exa: when you open a file and done in finally block you close it.
+    so we are releasing the resourses in finally block after 
+    using them '''
+
+''' finally example:
+try:
+   f = open("doc.txt",'r')
+   # perform file operations
+finally:
+   f.close()''''
 
 
 
